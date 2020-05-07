@@ -26,6 +26,13 @@ A array of versioned mod ids that need to be enabled alongside the mod. Specific
 "dependencies":[{"id":"otherModsId","min":"0.5.0","max":"1"}],
 ```
 
+### conflicts
+A array of versioned mod ids that can not be enabled alongside the mod. Specific versions can be used by defining the optional entries "min" and "max". They will filter the other mods version property and support only a format of numbers and dots. If min or max are missing the respective boundary is open ended.
+
+```
+"conflicts":[{"id":"otherModsId","min":"0.5.0","max":"1"}
+```
+
 ### versions
 All properties in the mod_info.json can be versioned. The propertiy holds an array of version block which specify a "gameVersionFilter". If the filter matches the games version all properties in the version block get copied into the root level of the json data replacing or adding new entries. The exclusion are "gameVersionFilter" and a possible "versions" property. The version filter may specify "min" and "max" if left out the respective boundary is open ended.
 
