@@ -1,7 +1,7 @@
 # SSMSUnlock
 A tool for Starsector modding that enables reflection, file access and new loading options for mods.
 
-## Mod Loading
+## Mod Loading - 0.9.1a only
 
 Mods can utilize new properties in mod_info.json to specify load order, dependencies, conflicts and support multiple game versions. If a list of enabled mods is invalid a popup will inform the user of the problem and the list is altered to avoid any conflict.
 
